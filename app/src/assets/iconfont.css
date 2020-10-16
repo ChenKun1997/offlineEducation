@@ -1,0 +1,116 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.ttf?t=1602051358449') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconcaidan:before {
+  content: "\e659";
+}
+
+.icontubiao2tixingnaozhong-copy:before {
+  content: "\e631";
+}
+
+.icondizhi:before {
+  content: "\e6ab";
+}
+
+.icondzf-copy:before {
+  content: "\e600";
+}
+
+.iconyouhuiquan:before {
+  content: "\e69b";
+}
+
+.iconliwu:before {
+  content: "\e673";
+}
+
+.iconsousuo:before {
+  content: "\e60b";
+}
+
+.iconbofang:before {
+  content: "\e623";
+}
+
+.iconicon-test:before {
+  content: "\e671";
+}
+
+.iconzixun:before {
+  content: "\e61a";
+}
+
+.iconyijieshu:before {
+  content: "\e61c";
+}
+
+.iconxuexizhong:before {
+  content: "\e603";
+}
+
+.icondiannao:before {
+  content: "\e621";
+}
+
+.iconyanjing:before {
+  content: "\e655";
+}
+
+.iconsself:before {
+  content: "\e601";
+}
+
+.iconjiantou-up-down:before {
+  content: "\e602";
+}
+
+.iconzaixianzixun:before {
+  content: "\e604";
+}
+
+.iconwode:before {
+  content: "\e6b4";
+}
+
+.iconshoucang:before {
+  content: "\e624";
+}
+
+.iconxiangyou:before {
+  content: "\e605";
+}
+
+.iconrecharge-refund:before {
+  content: "\e606";
+}
+
+.iconicongongkaikehover:before {
+  content: "\e662";
+}
+
+.iconxiaoxi:before {
+  content: "\e607";
+}
+
+.iconrili:before {
+  content: "\e647";
+}
+
+.iconshezhi:before {
+  content: "\e60a";
+}
+
+.iconshouye:before {
+  content: "\e608";
+}
+
