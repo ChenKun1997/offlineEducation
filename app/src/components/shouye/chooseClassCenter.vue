@@ -47,9 +47,14 @@ export default {
                 user:this.info.username,
                 state:0
             })
-            console.log(result);
-            this.$router.push('/shouye/order');
-
+            // console.log(result);
+            if(result.data.code === 0){
+                this.$router.push('/shouye/order');
+            }
+            else{
+                this.$toast(result.data.message)
+            }
+            
         }
     },
     created(){  

@@ -53,6 +53,11 @@ const routes = [
             path:'login',
             name:'login',
             component:()=>import(/* webpackChunkName: "login" */'../components/me/Login'),
+          },
+          {
+            path:'wait-to-pay',
+            name:'wait-to-pay',
+            component:()=>import(/* webpackChunkName: "wait-to-pay" */'../components/me/waitToPay'),
           }
         ]
       }

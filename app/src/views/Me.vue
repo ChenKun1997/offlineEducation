@@ -24,7 +24,7 @@
       <div class="order">
         <p class="title">我的订单</p>
         <div class="order_list">
-          <div class="item">
+          <div class="item" @click="toWaitToPayAction">
             <span class="iconfont icondzf-copy"></span>
             <span>待支付</span>
           </div>
@@ -100,6 +100,9 @@ export default {
   methods:{
     toLoginAction(){
       this.$router.push('/me/login');
+    },
+    toWaitToPayAction(){
+      this.$router.push('/me/wait-to-pay');
     },
     async logoutAction(){
       const result = await http.get(LOGOUT_API);

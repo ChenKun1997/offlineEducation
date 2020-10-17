@@ -1,32 +1,32 @@
 <template>
-  <div id="order" class="page subpage">
+  <div id="order" class="page subpage" v-if="order.detail">
       <header class="header">
         <span class="back" @click="backAction">&lt;</span>
         <span class="title">订单结算</span>
     </header>
     <div class="vip_name">
-        <p>会员名称：小小</p>
+        <p>会员名称：{{info.username}}</p>
         <p>用户手机号：18870786590</p>
     </div>
     <div class="detail">
         <p class="top">
-            <span class="title">二年级数学志高秋季班(下)</span>
-            <span class="fee">$2340/10课时</span>
+            <span class="title">{{order.detail.title}}</span>
+            <span class="fee">{{order.detail.fee}}</span>
         </p>
-        <p><span class="iconfont icondizhi"></span> <span class="addresss">丰台角门少儿学习中心220教室</span></p>
-        <p><span class="iconfont iconrili"></span><span class="date">2019/9/30 至 2019/12/26</span></p>
-        <p><span class="iconfont icontubiao2tixingnaozhong-copy"></span><span class="time">周一,周四17:00-18:30</span></p>
+        <p><span class="iconfont icondizhi"></span> <span class="addresss">{{order.detail.address}}</span></p>
+        <p><span class="iconfont iconrili"></span><span class="date">{{order.detail.time}}</span></p>
+        <p><span class="iconfont icontubiao2tixingnaozhong-copy"></span><span class="time">{{order.detail.date}}</span></p>
     </div>
     <!-- 优惠券 -->
     <div class="coupon">
         <span class="font">优惠券</span>
-        <span>-￥15.00</span>
+        <span>无</span>
         <span>&gt;</span>
     </div>
     <!-- 共需支付 -->
     <div class="money">
         <span>共需支付</span>
-        <span class="fee">￥2325.00</span>
+        <span class="fee">￥{{money}}.00</span>
     </div>
     <!-- 支付方式 -->
     <div class="pay_method">
@@ -42,25 +42,61 @@
     </div>
     <div class="submit">
         <div class="price">
-            ￥2325.00
+            ￥{{money}}.00
         </div>
         <div class="submit_btn" @click="submitAction">
             提交订单
         </div>
     </div>
   </div>
+  <div v-else></div>
 </template>
 
 <script>
+import http from '../../api/http';
+import {UPDATE_ORDER_STATE_API} from '../../api/url';
+import {mapState} from 'vuex';
 export default {
-    methods:{
-        backAction(){
-            this.$router.back();
-        },
-        submitAction(){
-            this.$toast('支付成功');
+    computed:{
+        ...mapState({
+            info:state=>state.user.info,
+            order:state=>state.order.order
+        }),
+        money(){
+            return parseInt(this.order.detail.fee.substring(1));
         }
     },
+    methods:{
+        async backAction(){
+            const result = await http.get(UPDATE_ORDER_STATE_API,
+            {
+                _id:this.order._id,
+                state:1
+            })
+            console.log(result);
+            this.$router.back();
+        },
+        async submitAction(){
+            const result = await http.get(UPDATE_ORDER_STATE_API,
+            {
+                _id:this.order._id,
+                state:2
+            });
+            if(result.data.code === 0){
+                this.$toast('支付成功');
+                this.$router.replace('/shouye');
+            }else{
+                this.$toast('支付失败');
+            }
+        }
+    },
+    created(){
+        this.$store.dispatch('order/requestOrder',{
+            user:this.info.username,
+            state:0,
+            tag:'order'
+        })
+    }
 }
 </script>
 

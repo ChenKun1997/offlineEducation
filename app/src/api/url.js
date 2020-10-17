@@ -16,10 +16,16 @@ export const USER_INFO_API = '/app/user/user_info';
 
 
 // 获取课程接口
-export const GET_COURSE_API = '/app/course/getCourse'
+export const GET_COURSE_API = '/app/course/getCourse';
 
 // 添加订单
-export const ADD_ORDER_API = '/app/order/addOrder'
+export const ADD_ORDER_API = '/app/order/addOrder';
 
 // 获取订单
-export const GET_ORDER_API = '/app/order/getOrder'
+export const GET_ORDER_API = '/app/order/getOrder';
+
+//修改订单状态
+export const UPDATE_ORDER_STATE_API = '/app/order/updateOrderState';
+
+//删除订单
+export const DELETE_ORDER_API = '/app/order/deleteOrder'
