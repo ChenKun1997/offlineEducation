@@ -6,6 +6,7 @@
 ### github地址：https://github.com/ChenKun1997/offlineEducation.git
 ### 移动端app：http://81.68.243.127:8000/mobile
 ### 后台管理系统：http://81.68.243.127:8000/pc/
+### 后台管理员   账号：chenkun  密码：123456
 
 
 
