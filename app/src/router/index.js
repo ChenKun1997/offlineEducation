@@ -58,6 +58,11 @@ const routes = [
             path:'wait-to-pay',
             name:'wait-to-pay',
             component:()=>import(/* webpackChunkName: "wait-to-pay" */'../components/me/waitToPay'),
+          },
+          {
+            path:'learning',
+            name:'learning',
+            component:()=>import(/* webpackChunkName: "learning" */'../components/me/learning'),
           }
         ]
       }

@@ -3,7 +3,7 @@
     theme="light"
     mode="inline"
     @click="changeRouteAction"
-    :defaultSelectedKeys="[selectKey]"
+    :defaultSelectedKeys="[]"
     :defaultOpenKeys="openKeys"
   >
     <template v-for="item in menuData">
@@ -52,15 +52,21 @@ export default {
   },
   computed: {
     openKeys() {
-      const index = this.$route.matched.findIndex(
-        (item) => item.name === this.$route.name
-      );
-      if (index === 1) {
-        //一级目录
-        return [];
-      } else {
-        //二级目录
-        return [this.$route.matched[1].name];
+      // const index = this.$route.matched.findIndex(
+      //   (item) => item.name === this.$route.name
+      // );
+      // if (index === 1) {
+      //   //一级目录
+      //   return [];
+      // } else {
+      //   //二级目录
+      //   return [this.$route.matched[1].name];
+      // }
+      console.log(this.$route);
+      if(this.$route.matched.length=== 3){
+         return [this.$route.matched[2].name];
+      }else{
+        return []
       }
     },
     // 获取用户信息

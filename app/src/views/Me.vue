@@ -32,7 +32,7 @@
             <span class="iconfont iconicongongkaikehover"></span>
             <span>待开课</span>
           </div> -->
-          <div class="item">
+          <div class="item" @click="toLearningAction">
             <span class="iconfont iconxuexizhong"></span>
             <span>学习中</span>
           </div>
@@ -103,6 +103,9 @@ export default {
     },
     toWaitToPayAction(){
       this.$router.push('/me/wait-to-pay');
+    },
+    toLearningAction(){
+      this.$router.push('/me/learning')
     },
     async logoutAction(){
       const result = await http.get(LOGOUT_API);

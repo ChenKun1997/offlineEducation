@@ -34,12 +34,19 @@ const router = new Router({
         {
           path: "404",
           component: () => import("../views/common/NotFind"),
+          // beforeEnter: (to, from, next) => {
+          //   console.log(from);
+          //   console.log(document.location);
+          //   setTimeout()
+          //   next(document.location.pathname);
+          // }
         },
       ],
     },
     {
       path: "*",
       redirect: "/404",
+     
     },
   ],
 });

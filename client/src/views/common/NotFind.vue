@@ -6,7 +6,12 @@
 
 <script>
 export default {
-
+  created(){
+    console.log(111);
+  },
+  beforeRouterEnter(to,from,next){
+    console.log(from);
+  }
 }
 </script>
 

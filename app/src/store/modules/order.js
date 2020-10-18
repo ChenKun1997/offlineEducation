@@ -15,6 +15,9 @@ export default {
         },
         setWaitToPay(state,payload){
             state.waitToPay = payload;
+        },
+        setLearning(state,payload){
+            state.learning = payload;
         }
     },
     actions:{
@@ -31,6 +34,8 @@ export default {
                 context.commit('setOrder',result.data.data[0]);
             }else if(payload.tag === 'waitToPay'){
                 context.commit('setWaitToPay',result.data.data);
+            }else if(payload.tag === 'learning'){
+                context.commit('setLearning',result.data.data)
             }
         },
     }

@@ -12,8 +12,20 @@ router.get('/addCourse',async (req,res)=>{
 // 删除课程
 router.get('/deleteCourse',async (req,res)=>{
     //获取url中的参数
-    const result = url.parse(req.url,true);
-    const data = await Course.deleteOne({_id:result._id})
+    const {_id} = req.query; 
+    try{
+        const result = await Course.deleteOne({_id});
+        // console.log(result);
+        if(result.deletedCount === 1){
+            res.json({code:0,message:'删除成功'})
+        }else{
+            res.json({code:-1,message:'删除失败'})
+        }
+    }
+    catch{
+        res.json({code:-1,message:'删除失败'})
+    }
+    
     
 })
 
