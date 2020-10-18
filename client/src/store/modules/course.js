@@ -14,7 +14,6 @@ export default {
         async requestCourseList(context,payload){
             const result = await http.get(GET_COURSE_API);
             context.commit('setCourseList',result.data);
-            // console.log(result.data);
         }
     }
 }

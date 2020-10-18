@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath:'/mobile/static',
     // 配置postcss-pxtorem
     css: {
       loaderOptions: {
@@ -23,7 +24,7 @@ module.exports = {
     devServer: {
       open: true,
       proxy: {
-        '/app': {
+        '/mobile/app': {
           target: 'http://localhost:8000',
           changeOrigin: true,
         }

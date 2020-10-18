@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["class-manage-detail"],{e564:function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},l=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[t("h1",[e._v("班级管理")])])}],c={},r=c,s=t("2877"),u=Object(s["a"])(r,a,l,!1,null,null,null);n["default"]=u.exports}}]);
+//# sourceMappingURL=class-manage-detail.ce1502f3.js.map

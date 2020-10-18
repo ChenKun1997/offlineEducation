@@ -29,7 +29,6 @@ export default {
                     state:payload.state
                 }
             )
-            console.log(result);
             if(payload.tag === 'order'){
                 context.commit('setOrder',result.data.data[0]);
             }else if(payload.tag === 'waitToPay'){

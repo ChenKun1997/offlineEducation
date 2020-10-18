@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["coupon-manage"],{"43ba":function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},c=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[t("h1",[e._v("优惠券管理")])])}],r={},u=r,l=t("2877"),o=Object(l["a"])(u,a,c,!1,null,null,null);n["default"]=o.exports}}]);
+//# sourceMappingURL=coupon-manage.dfd566d0.js.map

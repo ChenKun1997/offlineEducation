@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["student-manage"],{"2fbd":function(e,n,t){"use strict";t.r(n);var r=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},u=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[t("h1",[e._v("学员管理")])])}],a={},c=a,l=t("2877"),s=Object(l["a"])(c,r,u,!1,null,null,null);n["default"]=s.exports}}]);
+//# sourceMappingURL=student-manage.ece44344.js.map

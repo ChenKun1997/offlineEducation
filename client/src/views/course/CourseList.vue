@@ -81,11 +81,9 @@ export default {
       this.isShow = !this.isShow; 
     },
     async deleteCourse(_id){
-      console.log(111);
       const result =await http.get(DELETE_COURSE_API,{
         _id
       });
-      console.log(result);
       if(result.data.code === 0){
         this.$refs.content_item.removeChild(this.$refs[_id][0]);
       }else{
@@ -105,7 +103,6 @@ export default {
         time:this.time,
         fee:this.fee
       });
-      console.log(result);
       this.title = '';
       this.address = '';
       this.date = '';

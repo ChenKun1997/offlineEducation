@@ -9,7 +9,7 @@
         <p><label for="username">账号：</label><input id="username" type="text" placeholder="请输入账号" v-model="username"></p>
         <p><label for="password">密码：</label><input id="password" type="text" placeholder="请输入密码" v-model="password"></p>
         <div class="submit" @click="loginAction">登录</div>
-        <a class="aaa" href="/me/register">暂无账号，立即注册</a>
+        <a class="aaa" href="/mobile/me/register">暂无账号，立即注册</a>
       </div>
     </div>
   </div>

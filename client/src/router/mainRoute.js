@@ -1,12 +1,12 @@
 export default {
   path: "/",
-  component: () => import("../layout/Index"),
+  component: () => import(/* webpackChunkName: "root2" */"../layout/Index"),
   children: [
     // 系统首页
     {
       path: "",
       name: "home",
-      component: () => import("../views/home/Home"),
+      component: () => import(/* webpackChunkName: "home" */"../views/home/Home"),
       meta: {
         //路由的数据
         icon: "home",
@@ -29,7 +29,7 @@ export default {
         {
           path: "course-list",
           name: "course-list",
-          component: () => import("../views/course/CourseList"),
+          component: () => import(/* webpackChunkName: "course-list" */"../views/course/CourseList"),
           meta: {
             title: "课程列表",
           },
@@ -37,14 +37,14 @@ export default {
             {
               path: "add-course",
               name: "add-course",
-              component: () => import("../views/course/CourseConsume"),
+              component: () => import(/* webpackChunkName: "add-course" */"../views/course/CourseConsume"),
             }
           ]
         },
         {
           path: "course-consume",
           name: "course-consume",
-          component: () => import("../views/course/CourseConsume"),
+          component: () => import(/* webpackChunkName: "course-consume" */"../views/course/CourseConsume"),
           meta: {
             title: "课程消耗",
           },
@@ -68,7 +68,7 @@ export default {
         {
           path: "class-manage-detail",
           name: "class-manage-detail",
-          component: () => import("../views/class/ClassManageDetail"),
+          component: () => import(/* webpackChunkName: "class-manage-detail" */"../views/class/ClassManageDetail"),
           meta: {
             title: "班级管理",
           },
@@ -77,7 +77,7 @@ export default {
         {
           path: "lesson-manage",
           name: "lesson-manage",
-          component: () => import("../views/class/LessonManage"),
+          component: () => import(/* webpackChunkName: "lesson-mmanage" */"../views/class/LessonManage"),
           meta: {
             title: "课时管理",
           },
@@ -86,7 +86,7 @@ export default {
         {
           path: "classroom-manage",
           name: "classroom-manage",
-          component: () => import("../views/class/ClassroomManage"),
+          component: () => import(/* webpackChunkName: "classroom-manage" */"../views/class/ClassroomManage"),
           meta: {
             title: "教室管理",
           },
@@ -95,7 +95,7 @@ export default {
         {
           path: "class-schedule",
           name: "class-schedule",
-          component: () => import("../views/class/ClassSchedule"),
+          component: () => import(/* webpackChunkName: "class-schedule" */"../views/class/ClassSchedule"),
           meta: {
             title: "课程表",
           },
@@ -119,7 +119,7 @@ export default {
         {
           path:"order-list",
           name:"order-list",
-          component:()=>import("../views/order/OrderList"),
+          component:()=>import(/* webpackChunkName: "order-list" */"../views/order/OrderList"),
           meta: {
             title: "订单列表",
           },
@@ -127,7 +127,7 @@ export default {
         {
           path:"refund-manage",
           name:"refund-manage",
-          component:()=>import("../views/order/RefundManage"),
+          component:()=>import(/* webpackChunkName: "refund-manage" */"../views/order/RefundManage"),
           meta: {
             title: "退款管理",
           },
@@ -138,7 +138,7 @@ export default {
     {
       path: "student-manage",
       name: "student-manage",
-      component: () => import("../views/student/StudentManage"),
+      component: () => import(/* webpackChunkName: "student-manage" */"../views/student/StudentManage"),
       meta: {
         icon:'team',
         title: "学员管理",
@@ -162,7 +162,7 @@ export default {
         {
           path: "campus-manage",
           name: "campus-manage",
-          component: () => import("../views/teacher/CampusManage"),
+          component: () => import(/* webpackChunkName: "campus-manage" */"../views/teacher/CampusManage"),
           meta: {
             title: "校区管理",
           },
@@ -171,7 +171,7 @@ export default {
         {
           path: "teacher-manage-detail",
           name: "teacher-manage-detail",
-          component: () => import("../views/teacher/TeacherManageDetail"),
+          component: () => import(/* webpackChunkName: "teacher-manage-detail" */"../views/teacher/TeacherManageDetail"),
           meta: {
             title: "教师管理",
           },
@@ -196,7 +196,7 @@ export default {
         {
           path: "banner-manage",
           name: "banner-manage",
-          component: () => import("../views/article/BannerManage"),
+          component: () => import(/* webpackChunkName: "banner-manage" */"../views/article/BannerManage"),
           meta: {
             title: "轮播图管理",
           },
@@ -205,7 +205,7 @@ export default {
         {
           path: "information-manage",
           name: "information-manage",
-          component: () => import("../views/article/InformationManage"),
+          component: () => import(/* webpackChunkName: "information-manage" */"../views/article/InformationManage"),
           meta: {
             title: "资讯管理",
           },
@@ -214,7 +214,7 @@ export default {
         {
           path: "activity-manage",
           name: "activity-manage",
-          component: () => import("../views/article/ActivityManage"),
+          component: () => import(/* webpackChunkName: "activity-manage" */"../views/article/ActivityManage"),
           meta: {
             title: "活动管理",
           },
@@ -223,7 +223,7 @@ export default {
         {
           path: "public-class-manage",
           name: "public-class-manage",
-          component: () => import("../views/article/PublicClassManage"),
+          component: () => import(/* webpackChunkName: "public-class-manage" */"../views/article/PublicClassManage"),
           meta: {
             title: "公开课管理",
           },
@@ -247,7 +247,7 @@ export default {
         {
           path: "spike-activity",
           name: "spike-activity",
-          component: () => import("../views/activity/SpikeActivity"),
+          component: () => import(/* webpackChunkName: "spike-activity" */"../views/activity/SpikeActivity"),
           meta: {
             title: "秒杀活动",
           },
@@ -255,7 +255,7 @@ export default {
         {
           path: "coupon-manage",
           name: "coupon-manage",
-          component: () => import("../views/activity/CouponManage"),
+          component: () => import(/* webpackChunkName: "coupon-manage" */"../views/activity/CouponManage"),
           meta: {
             title: "优惠券管理",
           },
@@ -266,7 +266,7 @@ export default {
     {
       path: "statistical-analysis",
       name: "statistical-analysis",
-      component: () => import("../views/statistical/StatisticalAnalysis"),
+      component: () => import(/* webpackChunkName: "statistical-analysis" */"../views/statistical/StatisticalAnalysis"),
       meta: {
         icon:'fund',
         title: "统计分析",
@@ -289,7 +289,7 @@ export default {
         {
           path: "staff-manage",
           name: "staff-manage",
-          component: () => import("../views/setting/StaffManage"),
+          component: () => import(/* webpackChunkName: "staff-manage" */"../views/setting/StaffManage"),
           meta: {
             title: "员工管理",
           },
@@ -297,7 +297,7 @@ export default {
         {
           path: "roles-manage",
           name: "roles-manage",
-          component: () => import("../views/setting/RolesManage"),
+          component: () => import(/* webpackChunkName: "roles-manage" */"../views/setting/RolesManage"),
           meta: {
             title: "角色管理",
           },
@@ -305,7 +305,7 @@ export default {
         {
           path: "about-us",
           name: "about-us",
-          component: () => import("../views/setting/AboutUs"),
+          component: () => import(/* webpackChunkName: "about-us" */"../views/setting/AboutUs"),
           meta: {
             title: "关于我们",
           },
@@ -313,7 +313,7 @@ export default {
         {
           path: "general-setting",
           name: "general-setting",
-          component: () => import("../views/setting/GeneralSetting"),
+          component: () => import(/* webpackChunkName: "general-setting" */"../views/setting/GeneralSetting"),
           meta: {
             title: "通用设置",
           },
@@ -321,7 +321,7 @@ export default {
         {
           path: "message",
           name: "message",
-          component: () => import("../views/setting/Message"),
+          component: () => import(/* webpackChunkName: "message" */"../views/setting/Message"),
           meta: {
             title: "消息",
           },
@@ -329,7 +329,7 @@ export default {
         {
           path: "operation-log",
           name: "operation-log",
-          component: () => import("../views/setting/OperationLog"),
+          component: () => import(/* webpackChunkName: "operation-log" */"../views/setting/OperationLog"),
           meta: {
             title: "操作日志",
           },
@@ -340,7 +340,7 @@ export default {
     {
       path: "rights-manage",
       name: "rights-manage",
-      component: () => import("../views/rights/Manage"),
+      component: () => import(/* webpackChunkName: "rights-manage" */"../views/rights/Manage"),
       meta: {
         title: "权限管理",
       }
@@ -348,7 +348,7 @@ export default {
     {
       path: "add-acount",
       name: "add-acount",
-      component: () => import("../views/rights/AddAcount"),
+      component: () => import(/* webpackChunkName: "add-account" */"../views/rights/AddAcount"),
       meta: {
         title: "添加账号",
       }

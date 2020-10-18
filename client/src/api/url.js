@@ -1,4 +1,4 @@
-export const HOST = 'http://localhost:8080';
+export const HOST = 'http://localhost:8000/pc';
 
 //注册
 export const REGISTER_API = "/api/user/register";

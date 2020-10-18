@@ -48,19 +48,19 @@ html,body,#app{
     z-index: 100;
   }
 }
-.van-toast{
-  width: 100px;
-  height: 20px;
-  padding: 12px;
-  line-height: 20px;
-  box-sizing: border-box;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-}
-.van-toast__text{
-  font-size: 16px;
-  color: #fff;
-}
+// .van-toast{
+//   width: 100px;
+//   height: 20px;
+//   padding: 12px;
+//   line-height: 20px;
+//   box-sizing: border-box;
+//   position: fixed;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%,-50%);
+// }
+// .van-toast__text{
+//   font-size: 16px;
+//   color: #fff;
+// }
 </style>

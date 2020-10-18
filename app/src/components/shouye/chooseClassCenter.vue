@@ -41,13 +41,11 @@ export default {
             this.$router.back();
         },
         async payAction(id){
-            console.log(id,this.info.username);
             const result =await http.get(ADD_ORDER_API,{
                 id,
                 user:this.info.username,
                 state:0
             })
-            // console.log(result);
             if(result.data.code === 0){
                 this.$router.push('/shouye/order');
             }

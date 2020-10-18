@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["banner-manage"],{"241a":function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},r=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[t("h1",[e._v("轮播图管理")])])}],c={},l=c,u=t("2877"),s=Object(u["a"])(l,a,r,!1,null,null,null);n["default"]=s.exports}}]);
+//# sourceMappingURL=banner-manage.3c1e1fd6.js.map

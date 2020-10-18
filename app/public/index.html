@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/reset.css">
   </head>
   <body>
     <noscript>
@@ -13,9 +13,9 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    <script src="/js/flexible.js"></script>
-    <script src="/js/iscroll-probe.js"></script>
-    <script src="/js/fastclick.js"></script>
+    <script src="<%= BASE_URL %>js/flexible.js"></script>
+    <script src="<%= BASE_URL %>js/iscroll-probe.js"></script>
+    <script src="<%= BASE_URL %>js/fastclick.js"></script>
     <script>
       if ('addEventListener' in document) {
         document.addEventListener('DOMContentLoaded', function() {

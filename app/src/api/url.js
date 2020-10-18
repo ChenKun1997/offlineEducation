@@ -1,4 +1,4 @@
-export const HOST = 'http://localhost:8081';
+export const HOST = 'http://localhost:8000/mobile';
 // 注册
 export const REGISTER_API = '/app/user/register';
 // 登录

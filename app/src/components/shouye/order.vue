@@ -73,7 +73,6 @@ export default {
                 _id:this.order._id,
                 state:1
             })
-            console.log(result);
             this.$router.back();
         },
         async submitAction(){

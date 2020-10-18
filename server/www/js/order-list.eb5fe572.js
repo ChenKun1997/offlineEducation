@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["order-list"],{5408:function(e,n,t){"use strict";t.r(n);var r=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},l=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[t("h1",[e._v("订单列表")])])}],c={},s=c,u=t("2877"),i=Object(u["a"])(s,r,l,!1,null,null,null);n["default"]=i.exports}}]);
+//# sourceMappingURL=order-list.eb5fe572.js.map

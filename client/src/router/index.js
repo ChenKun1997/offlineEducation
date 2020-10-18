@@ -7,18 +7,19 @@ Vue.use(Router);
 
 const router = new Router({
   mode: "history",
+  base:'/pc',
   routes: [
     auth,
     {
       path: "/",
-      component: () => import("../layout/Index"),
+      component: () => import(/* webpackChunkName: "app1" */"../layout/Index"),
       name: 'app',
       children: [
         // 系统首页
         {
           path: "",
           name: "home",
-          component: () => import("../views/home/Home"),
+          component: () => import(/* webpackChunkName: "home" */"../views/home/Home"),
           meta: {
             //路由的数据
             icon: "home",
@@ -33,20 +34,14 @@ const router = new Router({
       children: [
         {
           path: "404",
-          component: () => import("../views/common/NotFind"),
-          // beforeEnter: (to, from, next) => {
-          //   console.log(from);
-          //   console.log(document.location);
-          //   setTimeout()
-          //   next(document.location.pathname);
-          // }
+          component: () => import(/* webpackChunkName: "404" */"../views/common/NotFind"),
+          
         },
       ],
     },
     {
       path: "*",
       redirect: "/404",
-     
     },
   ],
 });

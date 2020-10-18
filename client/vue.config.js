@@ -1,12 +1,13 @@
 module.exports = {
+  publicPath:'/pc/static',
   devServer: {
     open: true,
     proxy: {
-      '/api': {
+      '/pc/api': {
         target: 'http://localhost:8000',
         changeOrigin: true
       },
-      '/app': {
+      '/pc/app': {
         target: 'http://localhost:8000',
         changeOrigin: true
       }

@@ -2,6 +2,7 @@ const express = require('express');
 const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
 const config = require('./config');
+const path = require('path');
 
 const app = express();
 
@@ -29,10 +30,32 @@ app.use(require('express-session')({
 
 app.use(express.urlencoded());
 app.use(express.json());
-app.use('/api/user', require('./routers/apiRouter'));
-app.use('/app/user', require('./routers/appRouter'));
-app.use('/app/course',require('./routers/courseRouter'));
-app.use('/app/order',require('./routers/OrderRouter'))
+
+
+app.use('/pc/static',express.static(path.join(__dirname,'./www')))
+
+app.use('/mobile/static',express.static(path.join(__dirname,'./app')))
+
+
+
+
+
+app.use('/pc/api/user', require('./routers/apiRouter'));
+app.use('/pc/app/course',require('./routers/courseRouter'));
+
+
+app.use('/mobile/app/course',require('./routers/courseRouter'));
+app.use('/mobile/app/user', require('./routers/appRouter'));
+app.use('/mobile/app/order',require('./routers/OrderRouter'))
+
+
+app.use('/mobile',(req,res)=>{
+  res.sendFile(path.join(__dirname,'./app/index.html'))
+})
+app.use('/pc',(req,res)=>{
+  res.sendFile(path.join(__dirname,'./www/index.html'))
+})
+
 module.exports = app;
 
 

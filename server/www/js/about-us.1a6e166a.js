@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about-us"],{2688:function(e,n,t){"use strict";t.r(n);var u=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},r=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[t("h1",[e._v("关于我们")])])}],c={},l=c,s=t("2877"),a=Object(s["a"])(l,u,r,!1,null,null,null);n["default"]=a.exports}}]);
+//# sourceMappingURL=about-us.1a6e166a.js.map

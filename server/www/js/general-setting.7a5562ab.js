@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["general-setting"],{d585:function(e,n,t){"use strict";t.r(n);var r=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},l=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[t("h1",[e._v("通用设置")])])}],c={},s=c,u=t("2877"),a=Object(u["a"])(s,r,l,!1,null,null,null);n["default"]=a.exports}}]);
+//# sourceMappingURL=general-setting.7a5562ab.js.map

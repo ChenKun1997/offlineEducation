@@ -7,12 +7,12 @@ export default {
     {
       path: "login",
       name: "login",
-      component: () => import("../views/auth/Login"),
+      component: () => import(/* webpackChunkName: "login" */"../views/auth/Login"),
     },
     {
       path: "register",
       name: "register",
-      component: () => import("../views/auth/Register"),
+      component: () => import(/* webpackChunkName: "register" */"../views/auth/Register"),
     },
   ],
 };

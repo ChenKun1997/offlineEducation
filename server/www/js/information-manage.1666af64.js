@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["information-manage"],{"4f6b":function(n,e,t){"use strict";t.r(e);var r=function(){var n=this,e=n.$createElement;n._self._c;return n._m(0)},a=[function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[t("h1",[n._v("资讯管理")])])}],c={},i=c,l=t("2877"),u=Object(l["a"])(i,r,a,!1,null,null,null);e["default"]=u.exports}}]);
+//# sourceMappingURL=information-manage.1666af64.js.map
