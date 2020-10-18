@@ -2,10 +2,10 @@
 这是一个线下教育培训的平台
 
 
-###小组成员：陈坤
-###github地址：https://github.com/ChenKun1997/offlineEducation.git
-###移动端app：http://81.68.243.127:8000/mobile
-###后台管理系统：http://81.68.243.127:8000/pc/
+### 小组成员：陈坤
+### github地址：https://github.com/ChenKun1997/offlineEducation.git
+### 移动端app：http://81.68.243.127:8000/mobile
+### 后台管理系统：http://81.68.243.127:8000/pc/
 
 
 
